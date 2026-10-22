@@ -7,22 +7,25 @@ This project is a backend for a club presentation and management platform. The m
 ## Basic info
 Used:
 - C# with .NET Core 10
-- _Modular Monolith_ with _Domain Driven Design_ 
-- *MVC* on presentation layer - returning JSONs instead of classic Views
-- 
-
 
 ## System design
+
+- _Modular Monolith_ with _Domain Driven Design_
+- *MVC* on presentation layer - returning JSONs instead of classic Views
 
 
 | Module               | Responsability                                                | DDD weight | Reason                                                                               |
 |----------------------|---------------------------------------------------------------|------------|--------------------------------------------------------------------------------------|
 | Identity And Access  | Users, login, roles; who belongs to which club/category (age) | /          | Using ASP.NET Identity, Supporting                                                   |
 | Club Directory       | Club, categories (U13, U15..), players, staff etc             | Light      | Simple CRUD                                                                          |
-| Content              | Club news and events                                          | Light      | Simple CRUD                                                                          |
+| NewsLetter           | Club news and events                                          | Light      | Simple CRUD                                                                          |
 | Competitions         | Matches, results, fixtures                                    | Medium     | Light now - using external API; until we  develop our match stream system            |
 | Training             | Weekly plans, attendance, tactics...                          | Heavy      | Planning process, and the core of the app                                            |
 | Match Analysis       | Video posts, comments                                         | Heavy      | Publishing video analysis, sorting it (by players, teams etc), visibility to players |
 | Larning / Quiz (TBD) | quizzes for match analysis, scoring system, questions etc     | Medium     | /                                                                                    |
 
 
+
+## Disclaimer
+This project is being developed for educational purposes without AI code assistance. 
+The only time I am using AI is for comparing two different ideas (ie. why X is better than Y) mostly in design process.
