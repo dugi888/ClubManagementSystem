@@ -27,6 +27,9 @@ In this part of the process I followed [this](https://github.com/kgrzybek/modula
 | Larning / Quiz (TBD) | quizzes for match analysis, scoring system, questions etc     | Medium     | /                                                                                    |
 
 
+# CI / CD (Devops)
+**Protected branch**: master
+**Development branch**: dev
 
 ## Disclaimer
 This project is being developed for educational purposes without AI code assistance. 
