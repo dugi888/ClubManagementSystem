@@ -42,6 +42,7 @@ Logging.Run(() =>
  
  app.UseSerilogRequestLogging()
      .UseHttpsRedirection();
+ 
     app.UseCors(policyBuilder =>
             policyBuilder.AllowAnyOrigin()
                 .AllowAnyMethod()
