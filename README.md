@@ -1,6 +1,6 @@
 # Club Presentation and Management project
 
-To see what I intended at the first place and how the progress is going, see the [Idea](./Idea-and-Progress-docu/Idea.md) for idea and [Progress](./Idea-and-Progress-docu/Progress.md).
+To see what I intended at the first place and what am I learning from this project, click the [Idea](./Idea-and-Progress-docu/Idea.md) and [How, What, When](./Idea-and-Progress-docu/LearningProcess.md).
 
 This project is a backend for a club presentation and management platform. The main goal is to provide a platform for clubs to present themselves and manage their activities, players, and staff.
 
