@@ -8,9 +8,11 @@
 
     <ItemGroup>
       <PackageReference Include="EntityFramework" Version="6.5.2" />
+      <PackageReference Include="MediatR" Version="14.3.0" />
       <PackageReference Include="Microsoft.EntityFrameworkCore" Version="10.0.14" />
       <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="10.0.14" />
       <PackageReference Include="Microsoft.Extensions.Logging.Abstractions" Version="10.0.14" />
+      <PackageReference Include="Npgsql.EntityFrameworkCore.PostgreSQL" Version="10.0.3" />
       <PackageReference Include="Swashbuckle.AspNetCore" Version="10.3.1" />
       <PackageReference Include="Swashbuckle.AspNetCore.SwaggerGen" Version="10.3.1" />
       <PackageReference Include="Swashbuckle.AspNetCore.SwaggerUI" Version="10.3.1" />
@@ -19,6 +21,7 @@
     <ItemGroup>
       <ProjectReference Include="..\..\Common\Infrastructure\Infrastructure.csproj" />
       <ProjectReference Include="..\Modules.NewsLetter.Persistence\Modules.NewsLetter.Persistence.csproj" />
+      <ProjectReference Include="..\Modules.NewsLetter.Presentation\Modules.NewsLetter.Presentation.csproj" />
     </ItemGroup>
 
 </Project>

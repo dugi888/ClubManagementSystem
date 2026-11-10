@@ -16,6 +16,7 @@ public sealed class NewsLetterModuleInstaller : IModuleInstaller
     /// <inheritdoc />
     public void Install(IServiceCollection services, IConfiguration configuration)
     {
+        // Log.Information("Installing NewsLetter Module");
         Console.WriteLine("Installing NewsLetter Module");
         services
             .InstallServicesFromAssemblies(configuration, AssemblyReference.Assembly)

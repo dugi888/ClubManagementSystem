@@ -4,15 +4,13 @@ using Microsoft.Extensions.DependencyInjection;
 
 namespace Modules.NewsLetter.Infrastructure.ServiceInstallers;
 
-internal sealed class EndpointServiceInstaller : IServiceInstaller
+public class MediatrServiceInstaller : IServiceInstaller
 {
+
     /// inheritdoc />
-    
     public void Install(IServiceCollection services, IConfiguration configuration)
     {
-        Console.WriteLine("Installing Endpoints for NewsLetter Module");
-        //throw new NotImplementedException();
-         services.AddControllers();
-             //.AddApplicationPart(Endpoints.AssemblyReference.Assembly);
+        Console.WriteLine("Installing MediatR for NewsLetter Module");
+        services.AddMediatR(cfg => cfg.RegisterServicesFromAssembly(Modules.NewsLetter.Application.AssemblyReference.Assembly));
     }
 }

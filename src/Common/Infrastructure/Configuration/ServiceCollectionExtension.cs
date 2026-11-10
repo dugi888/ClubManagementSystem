@@ -36,8 +36,7 @@ public static class ServiceCollectionExtensions
 
         foreach (var implementationType in implementationTypes)
         {
-            // Find the interface that matches the class name (e.g., UserService -> IUserService)
-            // We look for an interface where the name is "I" + className
+            // We look for an interface where the name is "I" + className (e.g., NewsLetterService -> INewsLetterService)
             var interfaceType = implementationType.GetInterfaces()
                 .FirstOrDefault(i => i.Name == $"I{implementationType.Name}");
 
